@@ -1,0 +1,124 @@
+# Strict SwiftLint Configuration for System26 (iOS 26+)
+# Modern Swift 6 Standards
+
+strict: true
+
+# --- Disabled Rules ---
+# overly restrictive for modern SwiftUI/Clean Architecture
+disabled_rules:
+  - todo
+  - trailing_whitespace
+  - file_header
+  - type_name
+  - identifier_name
+  - large_tuple
+  - function_body_length # SwiftUI views can be long
+  - type_body_length     # ViewModels can be long
+  - line_length          # 120 chars is often too short for descriptive Swift names
+  - nesting              # SwiftUI often requires deep nesting
+
+# --- Opt-In Rules ---
+# High-value rules for correctness and idiomatic Swift
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_spacing
+  - collection_alignment
+  - conditional_returns_on_newline
+  - contains_over_first_not_nil
+  - convenience_type
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fallthrough
+  - fatal_error_message
+  - file_name_no_space
+  - first_where
+  - flatmap_over_map_reduce
+  - force_unwrapping
+  - function_default_parameter_at_end
+  - implicit_return
+  - joined_default_parameter
+  - last_where
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - multiline_arguments
+  - multiline_function_chains
+  - multiline_literal_brackets
+  - multiline_parameters
+  - no_extension_access_modifier
+  - no_grouping_extension
+  - nsobject_prefer_isequal
+  - operator_usage_whitespace
+  - optional_enum_case_matching
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - prefer_zero_over_explicit_init
+  - private_action
+  - private_outlet
+  - private_over_fileprivate
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - required_enum_case
+  - return_value_from_void_function
+  - sorted_first_last
+  - static_operator
+  - strict_fileprivate
+  - strong_iboutlet
+  - switch_case_on_newline
+  - toggle_bool
+  - trailing_closure
+  - unneeded_parentheses_in_closure_argument
+  - vertical_parameter_alignment_on_call
+  - vertical_whitespace_between_cases
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - void_return
+  - xctfail_message
+
+# --- Analyzer Rules ---
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+
+# --- Severity & Thresholds ---
+
+force_cast: error
+force_try: error
+
+
+cyclomatic_complexity:
+  warning: 15
+  error: 25
+
+indentation: 4
+
+trailing_comma: error
+unused_closure_parameter: error
+vertical_parameter_alignment: error
+
+vertical_whitespace:
+  max_empty_lines: 1
+
+# --- Paths ---
+excluded:
+  - Carthage
+  - Pods
+  - .build
+  - "**/.build"
+  - build
+  - DerivedData
+  - Package.swift
+  - fastlane
+  - docs
+  - ak
+
+included:
+  - System26
+  - Packages

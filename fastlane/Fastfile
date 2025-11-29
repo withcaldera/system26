@@ -1,0 +1,161 @@
+# frozen_string_literal: true
+
+require "base64"
+
+def app_identifier
+  "com.withcaldera.system26"
+end
+
+def team_id
+  "7XA39KQFB4"
+end
+
+def app_store_key_content
+  content = ENV["APP_STORE_KEY_CONTENT"].to_s
+  UI.user_error!("Missing APP_STORE_KEY_CONTENT secret") if content.empty?
+
+  begin
+    decoded = Base64.strict_decode64(content)
+    return decoded if decoded.start_with?("-----BEGIN PRIVATE KEY-----")
+  rescue ArgumentError
+    # fall through to raw content
+  end
+
+  content
+end
+
+def app_store_key
+  app_store_connect_api_key(
+    key_id: ENV.fetch("APP_STORE_KEY_ID"),
+    issuer_id: ENV.fetch("APP_STORE_KEY_ISSUER"),
+    key_content: app_store_key_content,
+    duration: 1200,
+    in_house: false
+  )
+end
+
+def ensure_match_repo!
+  return unless ENV["MATCH_GIT_URL"].to_s.empty?
+
+  UI.user_error!("Set MATCH_GIT_URL (and MATCH_PASSWORD if encrypted) so match can clone signing assets")
+end
+
+def keychain_settings
+  {
+    keychain_name: ENV["MATCH_KEYCHAIN_NAME"] || "system26-ci.keychain-db",
+    keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"] || "system26-ci"
+  }
+end
+
+fastlane_version "2.229.1"
+
+def build_directory(subpath)
+  File.join("fastlane", "output", subpath)
+end
+
+platform :ios do
+  desc "Build & upload iOS/iPadOS to TestFlight"
+  lane :deploy_ios do
+    ensure_match_repo!
+    key = app_store_key
+
+    match(
+      type: "appstore",
+      readonly: true,
+      api_key: key,
+      git_url: ENV["MATCH_GIT_URL"],
+      branch: ENV["MATCH_GIT_BRANCH"],
+      app_identifier: app_identifier,
+      team_id: team_id,
+      **keychain_settings
+    )
+
+    artifact = build_app(
+      scheme: "System26",
+      export_method: "app-store",
+      output_directory: build_directory("ios"),
+      output_name: "System26.ipa",
+      include_symbols: true,
+      include_bitcode: false,
+      clean: true
+    )
+
+    pilot(
+      api_key: key,
+      app_platform: "ios",
+      skip_waiting_for_build_processing: true,
+      ipa: artifact
+    )
+  end
+
+  desc "Build & upload visionOS to TestFlight"
+  lane :deploy_visionos do
+    ensure_match_repo!
+    key = app_store_key
+
+    match(
+      type: "appstore",
+      readonly: true,
+      api_key: key,
+      git_url: ENV["MATCH_GIT_URL"],
+      branch: ENV["MATCH_GIT_BRANCH"],
+      app_identifier: app_identifier,
+      team_id: team_id,
+      **keychain_settings
+    )
+
+    artifact = build_app(
+      scheme: "System26",
+      destination: "generic/platform=visionOS",
+      export_method: "app-store",
+      output_directory: build_directory("visionos"),
+      output_name: "System26-visionOS.ipa",
+      include_symbols: true,
+      include_bitcode: false,
+      clean: true
+    )
+
+    pilot(
+      api_key: key,
+      app_platform: "visionos",
+      skip_waiting_for_build_processing: true,
+      ipa: artifact
+    )
+  end
+end
+
+platform :mac do
+  desc "Build & upload macOS to TestFlight"
+  lane :deploy_mac do
+    ensure_match_repo!
+    key = app_store_key
+
+    match(
+      type: "mac_app_store",
+      readonly: true,
+      api_key: key,
+      git_url: ENV["MATCH_GIT_URL"],
+      branch: ENV["MATCH_GIT_BRANCH"],
+      app_identifier: app_identifier,
+      team_id: team_id,
+      **keychain_settings
+    )
+
+    artifact = build_app(
+      scheme: "System26",
+      destination: "generic/platform=macOS",
+      export_method: "app-store",
+      output_directory: build_directory("macos"),
+      output_name: "System26.pkg",
+      include_symbols: true,
+      clean: true
+    )
+
+    pilot(
+      api_key: key,
+      app_platform: "osx",
+      skip_waiting_for_build_processing: true,
+      ipa: artifact
+    )
+  end
+end
