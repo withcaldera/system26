@@ -74,6 +74,10 @@ import SwiftUI
     func updateNSView(_ nsView: NSView, context: Context) {
       if let layer = nsView.layer as? AVCaptureVideoPreviewLayer {
         layer.frame = nsView.bounds
+        if let connection = layer.connection, connection.isVideoMirroringSupported {
+          connection.automaticallyAdjustsVideoMirroring = false
+          connection.isVideoMirrored = false
+        }
       }
     }
   }
