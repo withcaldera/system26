@@ -16,38 +16,50 @@ final class ScreenshotTests: XCTestCase {
         // Take screenshot of initial state (sidebar/home)
         takeScreenshot(named: "01_Home")
 
-        // Navigate to Language Model screen using accessibility identifier
-        let sidebarLLM = app.buttons["sidebar_llm"].firstMatch
-        if sidebarLLM.waitForExistence(timeout: 5) {
-            sidebarLLM.tap()
-        }
-
-        // Wait for navigation animation
-        sleep(1)
-
-        // Take screenshot of Language Model screen
-        takeScreenshot(named: "02_LanguageModel")
-
-        // On iPhone (compact width), we need to go back to sidebar first
-        // Try to find and tap the back button if sidebar isn't visible
-        let sidebarAbout = app.buttons["sidebar_about"].firstMatch
-        if !sidebarAbout.exists {
-            // Look for back button in navigation bar
-            let backButton = app.navigationBars.buttons.element(boundBy: 0)
-            if backButton.waitForExistence(timeout: 2) {
-                backButton.tap()
-                sleep(1)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            // iPad Flow: Only Home and About
+            let sidebarAbout = app.buttons["sidebar_about"].firstMatch
+            if sidebarAbout.waitForExistence(timeout: 5) {
+                sidebarAbout.tap()
             }
-        }
+            sleep(1)
+            takeScreenshot(named: "02_About")
+        } else {
+            // iPhone Flow: Home, LLM, About
+            
+            // Navigate to Language Model screen using accessibility identifier
+            let sidebarLLM = app.buttons["sidebar_llm"].firstMatch
+            if sidebarLLM.waitForExistence(timeout: 5) {
+                sidebarLLM.tap()
+            }
 
-        // Navigate to About screen from sidebar
-        if sidebarAbout.waitForExistence(timeout: 5) {
-            sidebarAbout.tap()
-        }
-        sleep(1)
+            // Wait for navigation animation
+            sleep(1)
 
-        // Take screenshot of About screen
-        takeScreenshot(named: "03_About")
+            // Take screenshot of Language Model screen
+            takeScreenshot(named: "02_LanguageModel")
+
+            // On iPhone (compact width), we need to go back to sidebar first
+            // Try to find and tap the back button if sidebar isn't visible
+            let sidebarAbout = app.buttons["sidebar_about"].firstMatch
+            if !sidebarAbout.exists {
+                // Look for back button in navigation bar
+                let backButton = app.navigationBars.buttons.element(boundBy: 0)
+                if backButton.waitForExistence(timeout: 2) {
+                    backButton.tap()
+                    sleep(1)
+                }
+            }
+
+            // Navigate to About screen from sidebar
+            if sidebarAbout.waitForExistence(timeout: 5) {
+                sidebarAbout.tap()
+            }
+            sleep(1)
+
+            // Take screenshot of About screen
+            takeScreenshot(named: "03_About")
+        }
     }
 
     private func takeScreenshot(named name: String) {
