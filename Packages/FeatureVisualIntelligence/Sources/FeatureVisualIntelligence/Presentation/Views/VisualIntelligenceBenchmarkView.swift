@@ -101,17 +101,21 @@ public struct VisualIntelligenceBenchmarkView: View {
   }
 
   var modeToggleButton: some View {
-    let binding = Binding(
-      get: { viewModel.configuration.mode },
-      set: { newValue in viewModel.setMode(newValue) }
-    )
+    #if os(visionOS)
+      EmptyView()
+    #else
+      let binding = Binding(
+        get: { viewModel.configuration.mode },
+        set: { newValue in viewModel.setMode(newValue) }
+      )
 
-    return Picker(Localization.string("MODE"), selection: binding) {
-      Text(Localization.string("SYNTHETIC_TEST")).tag(BenchmarkConfiguration.Mode.synthetic)
-      Text(Localization.string("LIVE_CAMERA")).tag(BenchmarkConfiguration.Mode.liveCamera)
-    }
-    .labelsHidden()
-    .frame(alignment: .center)
+      Picker(Localization.string("MODE"), selection: binding) {
+        Text(Localization.string("SYNTHETIC_TEST")).tag(BenchmarkConfiguration.Mode.synthetic)
+        Text(Localization.string("LIVE_CAMERA")).tag(BenchmarkConfiguration.Mode.liveCamera)
+      }
+      .labelsHidden()
+      .frame(alignment: .center)
+    #endif
   }
 }
 
