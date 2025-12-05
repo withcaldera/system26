@@ -70,7 +70,7 @@ Experience computer vision pipelines using `Vision` framework.
 *   **Xcode 26+** (Required for Swift 6.0+ support).
 *   **macOS 26+** (Tahoe) or newer.
 *   **iOS/iPadOS/visionOS 26+** for device targets.
-*   **Device:** Apple Silicon (M-Series) or A-Series chip with Neural Engine.
+*   **Device:** Apple Silicon or device with Neural Engine.
 
 ### Setup
 1.  Clone the repository.

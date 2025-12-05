@@ -31,7 +31,7 @@ System26은 Apple의 온디바이스 `SystemLanguageModel` 프레임워크를 �
 ## 전제 조건
 
 *   **운영 체제:** macOS 26 (Tahoe), iOS 26, iPadOS 26, visionOS 26 이상.
-*   **하드웨어:** Apple Neural Engine이 탑재된 기기(Apple Silicon M-Series 또는 A-Series 칩).
+*   **하드웨어:** Apple Neural Engine이 탑재된 기기(Apple Silicon).
 *   **개발:** 빌드하려면 Xcode 26+가 필요합니다.
 
 ## 실행 방법

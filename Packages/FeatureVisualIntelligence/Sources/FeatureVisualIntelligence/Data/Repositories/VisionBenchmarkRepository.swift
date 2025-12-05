@@ -384,11 +384,11 @@ public final class VisionBenchmarkRepository: VisionBenchmarkRunner {
 
   private static func getSoCIdentifier() -> String {
     #if os(iOS)
-      return "Apple A-Series"
+      return "Apple Silicon"
     #elseif os(macOS)
-      return "Apple M-Series"
+      return "Apple Silicon"
     #elseif os(visionOS)
-      return "Apple R/M-Series"
+      return "Apple Silicon"
     #else
       return "Unknown"
     #endif

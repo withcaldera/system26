@@ -31,7 +31,7 @@ System26 là một tiện ích gốc được thiết kế để thử framework
 ## Điều kiện Tiên quyết
 
 *   **Hệ điều hành:** macOS 26 (Tahoe), iOS 26, iPadOS 26, visionOS 26 hoặc mới hơn.
-*   **Phần cứng:** Thiết bị có Apple Neural Engine (Chip Apple Silicon M-Series hoặc A-Series).
+*   **Phần cứng:** Thiết bị có Apple Neural Engine (Apple Silicon).
 *   **Phát triển:** Cần có Xcode 26+ để xây dựng.
 
 ## Cách Chạy
