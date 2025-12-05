@@ -137,61 +137,61 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 benötigt Apple Intelligence Modelle, um zu funktionieren. Bitte aktivieren Sie Apple Intelligence in den Systemeinstellungen."
+            "value": "System26 benötigt System Intelligence Modelle, um zu funktionieren. Bitte aktivieren Sie System Intelligence in den Systemeinstellungen."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 relies on Apple Intelligence models to function. Please enable Apple Intelligence in System Settings."
+            "value": "System26 relies on System Intelligence models to function. Please enable System Intelligence in System Settings."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 depende de los modelos de Apple Intelligence para funcionar. Por favor, activa Apple Intelligence en los Ajustes del sistema."
+            "value": "System26 depende de los modelos de System Intelligence para funcionar. Por favor, activa System Intelligence en los Ajustes del sistema."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 dépend des modèles Apple Intelligence pour fonctionner. Veuillez activer Apple Intelligence dans les Réglages Système."
+            "value": "System26 dépend des modèles System Intelligence pour fonctionner. Veuillez activer System Intelligence dans les Réglages Système."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 si affida ai modelli Apple Intelligence per funzionare. Abilita Apple Intelligence nelle Impostazioni di Sistema."
+            "value": "System26 si affida ai modelli System Intelligence per funzionare. Abilita System Intelligence nelle Impostazioni di Sistema."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 の機能には Apple Intelligence モデルが必要です。システム設定で Apple Intelligence を有効にしてください。"
+            "value": "System26 の機能には System Intelligence モデルが必要です。システム設定で System Intelligence を有効にしてください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26이 작동하려면 Apple Intelligence 모델이 필요합니다. 시스템 설정에서 Apple Intelligence를 활성화해 주세요."
+            "value": "System26이 작동하려면 System Intelligence 모델이 필요합니다. 시스템 설정에서 System Intelligence를 활성화해 주세요."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 depende dos modelos Apple Intelligence para funcionar. Por favor, ative o Apple Intelligence nos Ajustes do Sistema."
+            "value": "System26 depende dos modelos System Intelligence para funcionar. Por favor, ative o System Intelligence nos Ajustes do Sistema."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 dựa vào các mô hình Apple Intelligence để hoạt động. Vui lòng bật Apple Intelligence trong Cài đặt hệ thống."
+            "value": "System26 dựa vào các mô hình System Intelligence để hoạt động. Vui lòng bật System Intelligence trong Cài đặt hệ thống."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 依赖 Apple Intelligence 模型运行。请在系统设置中启用 Apple Intelligence。"
+            "value": "System26 依赖 System Intelligence 模型运行。请在系统设置中启用 System Intelligence。"
           }
         }
       }
@@ -202,61 +202,61 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence Erforderlich"
+            "value": "System Intelligence Erforderlich"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence Required"
+            "value": "System Intelligence Required"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence requerido"
+            "value": "System Intelligence requerido"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence requis"
+            "value": "System Intelligence requis"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence Richiesto"
+            "value": "System Intelligence Richiesto"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence が必要です"
+            "value": "System Intelligence が必要です"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence 필요"
+            "value": "System Intelligence 필요"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apple Intelligence Necessário"
+            "value": "System Intelligence Necessário"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Yêu cầu Apple Intelligence"
+            "value": "Yêu cầu System Intelligence"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "需要 Apple Intelligence"
+            "value": "需要 System Intelligence"
           }
         }
       }
@@ -2022,61 +2022,61 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 ist eine Schau dessen, was mit On-Device-AI möglich ist. Komplett lokal auf iPhone, iPad, Vision Pro und Mac entwickelt und betrieben, lässt dich die App die volle Leistung von Apple Intelligence erkunden."
+            "value": "System26 ist eine Schau dessen, was mit On-Device-AI möglich ist. Komplett lokal auf iPhone, iPad, Vision Pro und Mac entwickelt und betrieben, lässt dich die App die volle Leistung von System Intelligence erkunden."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 is a showcase of what’s possible with on-device AI. Built from the ground up to run entirely locally on your iPhone, iPad, Vision Pro, and Mac, this app lets you explore the full power of Apple Intelligence."
+            "value": "System26 is a showcase of what’s possible with on-device AI. Built from the ground up to run entirely locally on your iPhone, iPad, Vision Pro, and Mac, this app lets you explore the full power of System Intelligence."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 es una demostración de lo posible con IA en el dispositivo. Creada para ejecutarse totalmente de forma local en tu iPhone, iPad, Vision Pro y Mac, la app te permite explorar todo el potencial de Apple Intelligence."
+            "value": "System26 es una demostración de lo posible con IA en el dispositivo. Creada para ejecutarse totalmente de forma local en tu iPhone, iPad, Vision Pro y Mac, la app te permite explorar todo el potencial de System Intelligence."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 est une vitrine de ce que permet l’IA sur appareil. Conçue pour fonctionner entièrement en local sur votre iPhone, iPad, Vision Pro et Mac, l’app vous fait explorer toute la puissance d’Apple Intelligence."
+            "value": "System26 est une vitrine de ce que permet l’IA sur appareil. Conçue pour fonctionner entièrement en local sur votre iPhone, iPad, Vision Pro et Mac, l’app vous fait explorer toute la puissance d’System Intelligence."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 è una vetrina di ciò che è possibile con l’IA on‑device. Progettata per funzionare interamente in locale su iPhone, iPad, Vision Pro e Mac, l’app ti permette di esplorare tutta la potenza di Apple Intelligence."
+            "value": "System26 è una vetrina di ciò che è possibile con l’IA on‑device. Progettata per funzionare interamente in locale su iPhone, iPad, Vision Pro e Mac, l’app ti permette di esplorare tutta la potenza di System Intelligence."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 は、オンデバイス AI でできることを紹介するアプリです。iPhone、iPad、Vision Pro、Mac で完全にローカルに動作するよう設計され、Apple Intelligence の力を体験できます。"
+            "value": "System26 は、オンデバイス AI でできることを紹介するアプリです。iPhone、iPad、Vision Pro、Mac で完全にローカルに動作するよう設計され、System Intelligence の力を体験できます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26은 온디바이스 AI로 무엇이 가능한지 보여주는 쇼케이스입니다. iPhone, iPad, Vision Pro, Mac에서 완전히 로컬로 실행되도록 설계되어 Apple Intelligence의 모든 역량을 탐구할 수 있습니다."
+            "value": "System26은 온디바이스 AI로 무엇이 가능한지 보여주는 쇼케이스입니다. iPhone, iPad, Vision Pro, Mac에서 완전히 로컬로 실행되도록 설계되어 System Intelligence의 모든 역량을 탐구할 수 있습니다."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O System26 é uma vitrine do que é possível com IA no dispositivo. Criado para rodar totalmente local no seu iPhone, iPad, Vision Pro e Mac, o app permite explorar todo o poder da Apple Intelligence."
+            "value": "O System26 é uma vitrine do que é possível com IA no dispositivo. Criado para rodar totalmente local no seu iPhone, iPad, Vision Pro e Mac, o app permite explorar todo o poder da System Intelligence."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 là bản trình diễn những gì AI trên thiết bị có thể làm. Được xây dựng để chạy hoàn toàn cục bộ trên iPhone, iPad, Vision Pro và Mac, ứng dụng giúp bạn khám phá toàn bộ sức mạnh của Apple Intelligence."
+            "value": "System26 là bản trình diễn những gì AI trên thiết bị có thể làm. Được xây dựng để chạy hoàn toàn cục bộ trên iPhone, iPad, Vision Pro và Mac, ứng dụng giúp bạn khám phá toàn bộ sức mạnh của System Intelligence."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "System26 展示了端侧 AI 的可能性。该应用专为在 iPhone、iPad、Vision Pro 和 Mac 上完全本地运行而构建，帮助你体验 Apple Intelligence 的全部实力。"
+            "value": "System26 展示了端侧 AI 的可能性。该应用专为在 iPhone、iPad、Vision Pro 和 Mac 上完全本地运行而构建，帮助你体验 System Intelligence 的全部实力。"
           }
         }
       }
@@ -2932,61 +2932,61 @@
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stellen Sie sicher, dass Apple Intelligence in den Einstellungen aktiviert ist und sich das Gerät nicht im Stromsparmodus befindet."
+            "value": "Stellen Sie sicher, dass System Intelligence in den Einstellungen aktiviert ist und sich das Gerät nicht im Stromsparmodus befindet."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ensure Apple Intelligence is enabled in Settings and the device is not in Low Power Mode."
+            "value": "Ensure System Intelligence is enabled in Settings and the device is not in Low Power Mode."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Asegúrate de que Apple Intelligence esté habilitado en Ajustes y que el dispositivo no esté en modo de bajo consumo."
+            "value": "Asegúrate de que System Intelligence esté habilitado en Ajustes y que el dispositivo no esté en modo de bajo consumo."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Assurez-vous qu'Apple Intelligence est activé dans les Réglages et que l'appareil n'est pas en mode économie d'énergie."
+            "value": "Assurez-vous qu'System Intelligence est activé dans les Réglages et que l'appareil n'est pas en mode économie d'énergie."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Assicurati che Apple Intelligence sia abilitato nelle Impostazioni e che il dispositivo non sia in modalità Risparmio Energetico."
+            "value": "Assicurati che System Intelligence sia abilitato nelle Impostazioni e che il dispositivo non sia in modalità Risparmio Energetico."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "設定で Apple Intelligence が有効になっていること、およびデバイスが低電力モードでないことを確認してください。"
+            "value": "設定で System Intelligence が有効になっていること、およびデバイスが低電力モードでないことを確認してください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "설정에서 Apple Intelligence가 활성화되어 있고 기기가 저전력 모드가 아닌지 확인하세요."
+            "value": "설정에서 System Intelligence가 활성화되어 있고 기기가 저전력 모드가 아닌지 확인하세요."
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Certifique-se de que o Apple Intelligence esteja ativado nos Ajustes e que o dispositivo não esteja no modo de Pouca Energia."
+            "value": "Certifique-se de que o System Intelligence esteja ativado nos Ajustes e que o dispositivo não esteja no modo de Pouca Energia."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Đảm bảo Apple Intelligence được bật trong Cài đặt và thiết bị không ở Chế độ nguồn điện thấp."
+            "value": "Đảm bảo System Intelligence được bật trong Cài đặt và thiết bị không ở Chế độ nguồn điện thấp."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "请确保在设置中启用了 Apple Intelligence，并且设备未处于低电量模式。"
+            "value": "请确保在设置中启用了 System Intelligence，并且设备未处于低电量模式。"
           }
         }
       }
@@ -10479,7 +10479,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Visual Intelligence"
+            "value": "Computer Vision"
           }
         },
         "es": {

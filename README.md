@@ -1,6 +1,6 @@
 # `System26`
 
-System26 is a native utility designed to monitor and showcase Apple's on-device Foundation Models. It provides real-time performance metrics for **Language Models**, **Image Generation**, and **Visual Intelligence** across the Apple ecosystem.
+System26 is a native utility designed to monitor and showcase Apple's on-device Foundation Models. It provides real-time performance metrics for **Language Models**, **Image Generation**, and **Computer Vision** across the Apple ecosystem.
 
 <p align="right">
     <a href="https://example.com" style="text-decoration: none;">
@@ -51,7 +51,7 @@ Test on-device image synthesis using `ImagePlayground`.
 *   **Capabilities:** Text-to-Image, Sketch-to-Image (iOS/visionOS), and Concept Extraction.
 *   **Performance:** Measures generation time per image.
 
-### 👁️ Visual Intelligence
+### 👁️ Computer Vision
 Experience computer vision pipelines using `Vision` framework.
 *   **Modes:**
     *   **Live Camera:** Real-time analysis overlay on camera feed.
