@@ -66,6 +66,10 @@ struct System26AppView: View {
             Label(Localization.string("VISUAL_INTELLIGENCE"), systemImage: "eye.fill")
           }
           .accessibilityIdentifier("sidebar_vision")
+          #if os(visionOS)
+            .disabled(true)
+            .foregroundStyle(.secondary)
+          #endif
         } header: {
           VStack(alignment: .leading, spacing: 18) {
             Text("System26")
