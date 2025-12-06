@@ -75,7 +75,7 @@
   }
 
   extension CGImage {
-    fileprivate static func makePlaceholder(size: CGSize = CGSize(width: 8, height: 8)) -> CGImage {
+    private static func makePlaceholder(size: CGSize = CGSize(width: 8, height: 8)) -> CGImage {
       let colorSpace = CGColorSpaceCreateDeviceRGB()
       let bitmapInfo = CGImageAlphaInfo.noneSkipLast.rawValue
       guard

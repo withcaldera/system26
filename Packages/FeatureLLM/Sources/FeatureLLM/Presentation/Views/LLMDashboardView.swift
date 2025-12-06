@@ -255,21 +255,25 @@ public struct LLMDashboardView: View {
         #endif
       }
     }
-    .liquidErrorPresentation(error: Binding(
-      get: {
-        guard let message = vm.errorMessage else { return nil }
-        return LiquidError(
-          title: Localization.string("ERROR"),
-          message: message,
-          suggestion: nil
-        )
-      },
-      set: { newValue in
-        if newValue == nil {
-          vm.errorMessage = nil
+    .liquidErrorPresentation(
+      error: Binding(
+        get: {
+          guard let message = vm.errorMessage else {
+            return nil
+          }
+
+          return LiquidError(
+            title: Localization.string("ERROR"),
+            message: message,
+            suggestion: nil
+          )
+        },
+        set: { newValue in
+          if newValue == nil {
+            vm.errorMessage = nil
+          }
         }
-      }
-    ))
+      ))
   }
 }
 

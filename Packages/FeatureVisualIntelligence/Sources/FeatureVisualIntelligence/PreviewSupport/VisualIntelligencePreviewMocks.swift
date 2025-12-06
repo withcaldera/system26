@@ -9,7 +9,7 @@
       AsyncThrowingStream { continuation in
         let result = BenchmarkResult(
           deviceModel: "MacBook Pro",
-socIdentifier: "Apple Silicon",
+          socIdentifier: "Apple Silicon",
           configuration: configuration,
           totalDuration: 12.3,
           totalFrames: 480,

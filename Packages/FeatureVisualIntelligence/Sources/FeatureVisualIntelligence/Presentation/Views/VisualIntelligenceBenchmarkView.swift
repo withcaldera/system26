@@ -100,8 +100,7 @@ public struct VisualIntelligenceBenchmarkView: View {
     #endif
   }
 
-  @ViewBuilder
-  var modeToggleButton: some View {
+  @ViewBuilder var modeToggleButton: some View {
     #if os(visionOS)
       EmptyView()
     #else

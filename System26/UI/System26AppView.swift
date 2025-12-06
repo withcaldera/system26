@@ -62,13 +62,11 @@ struct System26AppView: View {
           }
           .accessibilityIdentifier("sidebar_image")
 
-          NavigationLink(value: SidebarItem.visualIntelligence) {
-            Label(Localization.string("VISUAL_INTELLIGENCE"), systemImage: "eye.fill")
-          }
-          .accessibilityIdentifier("sidebar_vision")
-          #if os(visionOS)
-            .disabled(true)
-            .foregroundStyle(.secondary)
+          #if !os(visionOS)
+            NavigationLink(value: SidebarItem.visualIntelligence) {
+              Label(Localization.string("VISUAL_INTELLIGENCE"), systemImage: "eye.fill")
+            }
+            .accessibilityIdentifier("sidebar_vision")
           #endif
         } header: {
           VStack(alignment: .leading, spacing: 18) {
