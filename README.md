@@ -3,10 +3,7 @@
 System26 is a native utility designed to monitor and showcase Apple's on-device Foundation Models. It provides real-time performance metrics for **Language Models**, **Image Generation**, and **Computer Vision** across the Apple ecosystem.
 
 <p align="right">
-    <a href="https://example.com" style="text-decoration: none;">
-        <img src="docs/mac-app-store.svg" alt="Download on the Mac App Store" width="156" />
-    </a>
-    <a href="https://example.com" style="text-decoration: none;">
+    <a href="https://apps.apple.com/us/app/system26/id6755742420" style="text-decoration: none;">
         <img src="docs/app-store.svg" alt="Download on the App Store" width="120" />
     </a>
 </p>
